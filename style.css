@@ -6,6 +6,7 @@ body {
     background: linear-gradient(to right, #eef2f3, #b6fbff);
     color: #333;
     transition: background-color 0.3s ease;
+    line-height: 1.6; /* Improved readability */
 }
 
 /* Header Styling */
@@ -14,7 +15,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font for header */
 }
 
 .header-container {
@@ -29,25 +30,29 @@ header {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Larger and bolder for prominence */
+    font-weight: 700;
+    letter-spacing: 2px; /* Spaced-out letters for a modern look */
 }
 
 /* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600; /* Bolder for emphasis */
+    font-size: 1.2rem;
+    letter-spacing: 1px; /* Slightly spaced-out letters */
     transition: color 0.3s ease;
 }
 
@@ -57,16 +62,20 @@ nav ul li a:hover {
 
 /* Section and Component Styling */
 h2 {
-    font-family: 'Orbitron', sans-serif;
-    margin: 20px 0;
+    font-family: 'Orbitron', sans-serif; /* Consistent futuristic font */
+    font-size: 2.2rem; /* Larger for section titles */
+    color: #1a237e;
+    margin: 30px 0 10px; /* Spacing around headings */
+    text-align: center;
 }
 
 .component {
     background: #fff;
-    padding: 20px;
-    margin: 20px;
+    padding: 25px;
+    margin: 20px auto;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Restrict the width for readability */
     transition: background 0.3s, box-shadow 0.3s ease;
 }
 
@@ -75,13 +84,19 @@ h2 {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+p, label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
 /* Dynamic Form Elements */
 .dynamic-input, .dynamic-select {
     width: calc(100% - 20px);
-    padding: 12px;
-    margin: 10px 0;
+    padding: 14px;
+    margin: 15px 0;
     border: 2px solid #1a237e;
     border-radius: 8px;
+    font-size: 1.1rem; /* Larger text for form elements */
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -90,14 +105,17 @@ h2 {
     box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
 }
 
+/* Button Styling */
 .dynamic-button {
     background-color: #ff8c00;
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 14px 28px;
+    font-size: 1.2rem;
     border-radius: 8px;
     cursor: pointer;
     font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px; /* Button text spacing */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -117,6 +135,7 @@ th, td {
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
+    font-size: 1.1rem;
 }
 
 th {
@@ -132,6 +151,7 @@ th {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
+    font-size: 1.3rem;
     transition: background-color 0.3s ease;
 }
 
@@ -158,4 +178,6 @@ footer {
     width: 100%;
     bottom: 0;
     font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.1rem; /* Footer text size */
 }
