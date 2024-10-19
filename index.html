@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Srinivas Automation Lab</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Srinivas Automation Lab Logo" class="logo" cy-data="lab-logo">
-        <h1 cy-data="lab-heading">Srinivas Automation Lab</h1>
+        <img src="logo.png" alt="Srinivas Automation Lab Logo" class="logo">
+        <h1>Srinivas Automation Lab</h1>
         <nav>
             <ul>
-                <li><a href="#radio-example" target="_blank" cy-data="nav-radio">Radio Button</a></li>
-                <li><a href="#suggestion-example" target="_blank" cy-data="nav-suggestion">Suggestion Class</a></li>
-                <li><a href="#dropdown-example" target="_blank" cy-data="nav-dropdown">Dropdown</a></li>
+                <li><a href="#radio-example" target="_blank">Radio Button</a></li>
+                <li><a href="#suggestion-example" target="_blank">Suggestion Class</a></li>
+                <li><a href="#dropdown-example" target="_blank">Dropdown</a></li>
             </ul>
         </nav>
     </header>
@@ -23,66 +23,66 @@
     <main>
         <section id="radio-example" class="component">
             <h2>Radio Button Example</h2>
-            <label><input type="radio" name="gender" value="male" cy-data="radio-male"> Male</label>
-            <label><input type="radio" name="gender" value="female" cy-data="radio-female"> Female</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
         </section>
 
         <section id="suggestion-example" class="component">
             <h2>Suggestion Class Example</h2>
-            <input type="text" id="countryInput" placeholder="Type country name..." class="dynamic-input" cy-data="input-country">
-            <div id="suggestionBox" class="suggestion-box" cy-data="suggestion-box"></div>
+            <input type="text" id="countryInput" placeholder="Type country name..." class="dynamic-input">
+            <div id="suggestionBox" class="suggestion-box"></div>
         </section>
 
         <section id="dropdown-example" class="component">
             <h2>Dropdown Example</h2>
-            <select id="dropdown" class="dynamic-select" cy-data="select-dropdown">
-                <option value="option1" cy-data="option-1">Option 1</option>
-                <option value="option2" cy-data="option-2">Option 2</option>
-                <option value="option3" cy-data="option-3">Option 3</option>
+            <select id="dropdown" class="dynamic-select">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
             </select>
         </section>
 
         <section class="component">
             <h2>Checkbox Example</h2>
-            <label><input type="checkbox" class="dynamic-checkbox" cy-data="checkbox"> Check me!</label>
+            <label><input type="checkbox" class="dynamic-checkbox"> Check me!</label>
         </section>
 
         <section class="component">
             <h2>Switch Window Example</h2>
-            <button class="dynamic-button" onclick="window.open('https://www.example.com', '_blank')" cy-data="btn-window">Open New Window</button>
+            <button class="dynamic-button" onclick="window.open('https://www.example.com', '_blank')">Open New Window</button>
         </section>
 
         <section class="component">
             <h2>Switch Tab Example</h2>
-            <button class="dynamic-button" onclick="window.open('https://www.example.com', '_blank')" cy-data="btn-tab">Open New Tab</button>
+            <button class="dynamic-button" onclick="window.open('https://www.example.com', '_blank')">Open New Tab</button>
         </section>
 
         <section class="component">
             <h2>Switch Alert Example</h2>
-            <button class="dynamic-button" onclick="showAlert()" cy-data="btn-alert">Show Alert</button>
-            <button class="dynamic-button" onclick="showConfirm()" cy-data="btn-confirm">Show Confirm</button>
+            <button class="dynamic-button" onclick="showAlert()">Show Alert</button>
+            <button class="dynamic-button" onclick="showConfirm()">Show Confirm</button>
         </section>
 
         <section class="component">
             <h2>Web Table Example</h2>
-            <table class="dynamic-table" cy-data="web-table">
+            <table class="dynamic-table">
                 <thead>
                     <tr>
-                        <th cy-data="table-header-name">Name</th>
-                        <th cy-data="table-header-degree">Degree</th>
-                        <th cy-data="table-header-age">Age</th>
+                        <th>Name</th>
+                        <th>Degree</th>
+                        <th>Age</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr cy-data="row-1">
-                        <td cy-data="row-1-name">John Doe</td>
-                        <td cy-data="row-1-degree">B.Sc</td>
-                        <td cy-data="row-1-age">21</td>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>B.Sc</td>
+                        <td>21</td>
                     </tr>
-                    <tr cy-data="row-2">
-                        <td cy-data="row-2-name">Jane Smith</td>
-                        <td cy-data="row-2-degree">M.Sc</td>
-                        <td cy-data="row-2-age">23</td>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>M.Sc</td>
+                        <td>23</td>
                     </tr>
                 </tbody>
             </table>
@@ -90,12 +90,12 @@
 
         <section class="component">
             <h2>Mouse Over Example</h2>
-            <div class="hover-box" cy-data="hover-box">Hover over me!</div>
+            <div class="hover-box">Hover over me!</div>
         </section>
 
         <section class="component">
             <h2>IFrame Example</h2>
-            <iframe src="https://www.example.com" width="600" height="400" class="dynamic-iframe" cy-data="iframe-example"></iframe>
+            <iframe src="https://www.example.com" width="600" height="400" class="dynamic-iframe"></iframe>
         </section>
     </main>
 
