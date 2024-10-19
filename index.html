@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinivas Automation Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Srinivas Automation Lab</h1>
+        <nav>
+            <ul>
+                <li><a href="#form">Form Automation</a></li>
+                <li><a href="#calculator">Calculator Automation</a></li>
+                <li><a href="#todo">Todo List Automation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form">
+            <h2>Form Automation</h2>
+            <form id="testForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formResult"></div>
+        </section>
+
+        <section id="calculator">
+            <h2>Calculator Automation</h2>
+            <input type="number" id="num1" placeholder="Number 1">
+            <input type="number" id="num2" placeholder="Number 2">
+            <button id="addBtn">Add</button>
+            <div id="calcResult"></div>
+        </section>
+
+        <section id="todo">
+            <h2>Todo List Automation</h2>
+            <input type="text" id="todoInput" placeholder="Add a new todo">
+            <button id="addTodoBtn">Add Todo</button>
+            <ul id="todoList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Srinivas Automation Lab</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
