@@ -5,45 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Srinivas Automation Lab</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Srinivas Automation Lab</h1>
         <nav>
             <ul>
-                <li><a href="#form">Form Automation</a></li>
-                <li><a href="#calculator">Calculator Automation</a></li>
-                <li><a href="#todo">Todo List Automation</a></li>
+                <li><a href="#radio-example" target="_blank">Radio Button</a></li>
+                <li><a href="#suggestion-example" target="_blank">Suggestion Class</a></li>
+                <li><a href="#dropdown-example" target="_blank">Dropdown</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="form">
-            <h2>Form Automation</h2>
-            <form id="testForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <button type="submit">Submit</button>
-            </form>
-            <div id="formResult"></div>
+        <section id="radio-example" class="component">
+            <h2>Radio Button Example</h2>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
         </section>
 
-        <section id="calculator">
-            <h2>Calculator Automation</h2>
-            <input type="number" id="num1" placeholder="Number 1">
-            <input type="number" id="num2" placeholder="Number 2">
-            <button id="addBtn">Add</button>
-            <div id="calcResult"></div>
+        <section id="suggestion-example" class="component">
+            <h2>Suggestion Class Example</h2>
+            <input type="text" id="countryInput" placeholder="Type country name...">
+            <div id="suggestionBox"></div>
         </section>
 
-        <section id="todo">
-            <h2>Todo List Automation</h2>
-            <input type="text" id="todoInput" placeholder="Add a new todo">
-            <button id="addTodoBtn">Add Todo</button>
-            <ul id="todoList"></ul>
+        <section id="dropdown-example" class="component">
+            <h2>Dropdown Example</h2>
+            <select id="dropdown">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+            </select>
+        </section>
+
+        <section class="component">
+            <h2>Checkbox Example</h2>
+            <label><input type="checkbox"> Check me!</label>
+        </section>
+
+        <section class="component">
+            <h2>Switch Window Example</h2>
+            <button onclick="window.open('https://www.example.com', '_blank')">Open New Window</button>
+        </section>
+
+        <section class="component">
+            <h2>Switch Tab Example</h2>
+            <button onclick="window.open('https://www.example.com', '_blank')">Open New Tab</button>
+        </section>
+
+        <section class="component">
+            <h2>Switch Alert Example</h2>
+            <button onclick="showAlert()">Show Alert</button>
+            <button onclick="showConfirm()">Show Confirm</button>
+        </section>
+
+        <section class="component">
+            <h2>Web Table Example</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Degree</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>B.Sc</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>M.Sc</td>
+                        <td>23</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="component">
+            <h2>Mouse Over Example</h2>
+            <div class="hover-box">Hover over me!</div>
+        </section>
+
+        <section class="component">
+            <h2>IFrame Example</h2>
+            <iframe src="https://www.example.com" width="600" height="400"></iframe>
         </section>
     </main>
 
