@@ -9,6 +9,7 @@ document.getElementById('countryInput').addEventListener('input', function() {
         filteredSuggestions.forEach(country => {
             const div = document.createElement('div');
             div.innerText = country;
+            div.className = 'suggestion-item';
             div.onclick = () => {
                 document.getElementById('countryInput').value = country;
                 suggestionBox.innerHTML = '';
