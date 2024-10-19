@@ -2,15 +2,23 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
     color: #333;
 }
 
 header {
-    background: #0056b3;
+    background: #2c3e50;
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 nav ul {
@@ -37,11 +45,38 @@ h1, h2 {
     background: #fff;
     padding: 20px;
     margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-table {
+.dynamic-input, .dynamic-select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+.dynamic-input:focus, .dynamic-select:focus {
+    border-color: #007BFF;
+}
+
+.dynamic-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dynamic-button:hover {
+    background-color: #0056b3;
+}
+
+.dynamic-table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
@@ -70,10 +105,14 @@ th {
     background-color: #5a6268;
 }
 
+.dynamic-iframe {
+    border: 2px solid #2c3e50;
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #0056b3;
+    background: #2c3e50;
     color: #fff;
     position: fixed;
     width: 100%;
